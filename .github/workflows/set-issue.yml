@@ -1,0 +1,16 @@
+name: PR 作成時に Issue と連携
+run-name: PR 作成時に Issue と連携
+on:
+  push
+
+jobs:
+  addLabelsByBranch:
+    name: PR Labeler
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: "検証"
+        uses: yui666a/hello-world-javascript-action@v0.2
+        with:
+          who-to-greet: 'Mona the Octocat'
+  
