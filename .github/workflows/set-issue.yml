@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 3
     steps:
       - name: "検証"
-        uses: yui666a/hello-world-javascript-action@v0.3
+        uses: yui666a/hello-world-javascript-action
         with:
           branch-name: ${{ github.ref_name }}
           who-to-greet: 'Mona the Octocat'
