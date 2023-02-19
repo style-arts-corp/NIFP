@@ -8,10 +8,14 @@ jobs:
     name: PR Labeler
     runs-on: ubuntu-latest
     timeout-minutes: 3
+    permissions:
+      pull-requests: write
     steps:
       - name: "検証"
-        uses: yui666a/hello-world-javascript-action@v0.4
+        uses: yui666a/hello-world-javascript-action@v0.5
         with:
           branch-name: ${{ github.ref_name }}
           who-to-greet: 'Mona the Octocat'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
