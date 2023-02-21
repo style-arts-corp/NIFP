@@ -52,7 +52,7 @@ body {
   width: 100vw;
 }
 
-#button {
+.button {
   letter-spacing: 2px;
   font-size: 1.7vw;
   width: 40%;
@@ -98,7 +98,7 @@ body {
     height: 20vh;
   }
 
-  #button{
+  .button{
     font-size: 4vw;
     width: 80vw;
     padding: 10px 40px;
