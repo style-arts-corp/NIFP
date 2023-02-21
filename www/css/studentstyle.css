@@ -267,17 +267,17 @@ ul {
   object-fit: contain;
 }
 
-.recommendation {
+#people {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.konnakata {
+.people-title {
   margin-bottom: 50px;
 }
 
-.rec {
+.recommendation {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -705,17 +705,13 @@ ul {
   .ifp {
     flex-direction: column-reverse;
   }
-  /* 
-  .recommendation{
-    height: 50vh;
-  } */
 
-  .konnakata {
+  .people-title {
     width: 70%;
   }
-  .rec {
+
+  .recommendation {
     width: 80%;
-    /* height: 70%; */
     flex-wrap: wrap;
   }
 
