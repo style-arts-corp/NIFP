@@ -297,15 +297,12 @@ ul {
   position: relative;
 }
 
-.jtitle {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 50px;
+.join-title {
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 #box1 {
-  position: absolute;
   top: 8%;
   left: 7%;
   width: 10vh;
@@ -314,7 +311,6 @@ ul {
 }
 
 #box2 {
-  position: absolute;
   top: 35%;
   right: 8%;
   width: 7vh;
@@ -323,7 +319,6 @@ ul {
 }
 
 #box3 {
-  position: absolute;
   top: 53%;
   left: 7%;
   width: 10vh;
@@ -332,7 +327,6 @@ ul {
 }
 
 #box4 {
-  position: absolute;
   top: 70%;
   right: 8%;
   width: 7vh;
@@ -341,7 +335,6 @@ ul {
 }
 
 #box5 {
-  position: absolute;
   top: 70%;
   left: 70%;
   width: 5vh;
@@ -350,7 +343,6 @@ ul {
 }
 
 #box6 {
-  position: absolute;
   top: 60%;
   right: -15%;
   width: 4vh;
@@ -359,6 +351,7 @@ ul {
 }
 
 .fluid {
+  position: absolute;
   animation: mochimochi 5s infinite;
   animation-timing-function: linear;
 }
@@ -381,41 +374,30 @@ ul {
   }
 }
 
-.detail1 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-.detail2 {
+.detail {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.detail1 div {
+.detail-text {
   padding-top: 20px;
+  padding-right: 20px;
+  width: 50%;
+}
+
+.detail-text2 {  
   padding-left: 20px;
-  padding-right: 20px;
+}
+
+.detail img {
   width: 50%;
 }
 
-.detail2 div {
-  padding-top: 20px;
-  padding-right: 20px;
-  width: 50%;
-}
-
-.detail1 img,
-.detail2 img {
-  width: 50%;
-}
-
-.detail1 span,
-.detail2 span {
+.detail span {
   display: inline-block;
 }
-.detail1 h1,
-.detail2 h1 {
+.detail h1 {
   margin-bottom: 1rem;
 }
 
@@ -721,28 +703,25 @@ ul {
     margin-bottom: 20px;
   }
 
-  .jtitle img {
+  .join-title {
     width: 50%;
   }
 
-  .detail1 {
+  .detail {
     flex-direction: column;
   }
 
-  .detail1 img,
-  .detail2 img {
+  .detail img {
     width: 100%;
   }
 
-  .detail1 div,
-  .detail2 div {
+  .detail-text {
     padding: 0;
     margin: 20px 0 0 0;
     width: 100%;
   }
 
-  .detail1 h1,
-  .detail2 h1 {
+  .detail h1 {
     margin: 0 0 10px 0;
   }
 
