@@ -431,36 +431,29 @@ ul {
   align-items: center;
 }
 
-.vtitle {
+.voice-title {
   display: flex;
   justify-content: center;
 }
 
-.voice-container {
+.container {
   display: flex;
   flex-direction: column;
   width: 75%;
 }
 
-.voice-container img {
+.container img {
   object-fit: contain;
 }
 
-.voice-container1 {
+.voice-container {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
-.voice-container1 img,
-.voice-container2 img {
+.voice-container img {
   width: 42%;
-}
-
-.voice-container2 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
 }
 
 .profile {
@@ -469,14 +462,14 @@ ul {
   flex-direction: column;
 }
 
-.table2 .profile-row {
+.profile-table .profile-row {
   line-height: 50px;
   border-bottom: 2px solid #000;
   margin: 0;
   position: relative;
 }
 
-.table2 .profile-row:last-child {
+.profile-table .profile-row:last-child {
   border-bottom: none;
 }
 
@@ -492,11 +485,11 @@ ul {
   font-weight: normal;
 }
 
-.q {
+.question {
   margin-bottom: 20px;
 }
 
-.q h3 {
+.question h3 {
   color: #fff;
   padding: 5px 0 5px 5px;
   background-color: var(--tertiary-color);
@@ -511,29 +504,29 @@ ul {
   color: #fff;
 }
 
-.ctitle {
+.company-title {
   display: flex;
   justify-content: center;
 }
 
-.cphoto {
+.company-area {
   width: 75%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.cimg {
+.company-logo {
   width: 15%;
   display: flex;
   flex-direction: column;
 }
 
-.cimg p {
+.company-logo p {
   text-align: center;
 }
 
-.btitle {
+.basic-information-title {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -541,48 +534,40 @@ ul {
   margin-top: 50px;
 }
 
-.table th {
+.basic-information-table th {
   font-size: 20px;
   color: #fff;
   background-color: var(--tertiary-color);
   padding: 20px;
 }
 
-.table {
+.basic-information-table {
   border-spacing: 0px 20px;
 }
 
-.table td {
+.basic-information-table td {
   background-color: rgb(231, 229, 229);
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.table p {
+.basic-information-table p {
   padding: 0;
   margin: 0;
 }
 
-.sj ul {
-  padding-left: 0;
-}
-
-.sj span {
-  color: var(--tertiary-color);
-}
-
-.a {
+.information-detail {
   margin-bottom: 20px;
 }
 
-.a h3 {
+.information-detail h3 {
   text-align: center;
   color: #fff;
   padding: 5px 0;
   background-color: var(--tertiary-color);
 }
 
-.a p {
+.information-detail p {
   margin: 0 auto;
 }
 
@@ -730,24 +715,15 @@ ul {
     height: 2.5rem;
   }
 
-  .ftitle {
-    font-size: 9vw;
-    width: 100%;
-    text-align: center;
-    text-shadow: 1px 1px 0, 1px -1px 0px, -1px 1px 0, -1px -1px 0px, 1px 0px 0px,
-      0px 1px 0px, -1px 0px 0px, 0px -1px 0px;
-    letter-spacing: 3px;
-  }
-
   .flow .flow-figure {
     width: 80%;
   }
 
-  .vtitle {
+  .voice-title {
     width: 100%;
   }
 
-  .vtitle img {
+  .voice-title img {
     width: 60%;
   }
 
@@ -759,7 +735,7 @@ ul {
     flex-direction: column-reverse;
   }
 
-  .voice-container img {
+  .container img {
     width: 100%;
   }
 
@@ -767,20 +743,20 @@ ul {
     width: 100%;
   }
 
-  .ctitle {
+  .company-title {
     width: 100%;
   }
 
-  .ctitle img {
+  .company-title img {
     width: 50%;
   }
 
-  .cphoto {
+  .company-area {
     flex-wrap: wrap;
     height: 60vh;
   }
 
-  .cimg {
+  .company-logo {
     width: 40%;
   }
 
@@ -788,16 +764,16 @@ ul {
     height: 80vh;
   }
 
-  .btitle {
+  .basic-information-title {
     margin-top: 0;
     margin-bottom: 30px;
   }
 
-  .btitle img {
+  .basic-information-title img {
     width: 50%;
   }
 
-  .table2 .profile-row {
+  .profile-table .profile-row {
     line-height: inherit;
     padding-bottom: 0.5rem ;
     margin-bottom: 0.5rem ;
@@ -817,12 +793,12 @@ ul {
 }
 
 @media screen and (max-width: 400px) {
-  .table td {
+  .basic-information-table td {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  .table th {
+  .basic-information-table th {
     padding: 20px 10px;
   }
 }
