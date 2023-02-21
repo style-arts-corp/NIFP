@@ -413,6 +413,7 @@ ul {
   /* width: 40%; */
   margin-bottom: 3rem;
 }
+
 .flow-title-wrapper{
   width: 80%;
   display: flex;
@@ -420,19 +421,7 @@ ul {
   justify-content: center;
 }
 
-.ftitle {
-  font-style: italic;
-  color: var(--tertiary-color);
-  /* font-weight: bold; */
-  font-size: 300%;
-  text-align: center;
-  text-shadow: 1.5px 1.5px 0, 1.5px -1.5px 0px, -1.5px 1.5px 0,
-    -1.5px -1.5px 0px, 1.5px 0px 0px, 0px 1.5px 0px, -1.5px 0px 0px,
-    0px -1.5px 0px;
-  letter-spacing: 3px;
-}
-
-.fimg {
+.flow-figure {
   width: 70%;
 }
 
@@ -750,7 +739,7 @@ ul {
     letter-spacing: 3px;
   }
 
-  .flow .fimg {
+  .flow .flow-figure {
     width: 80%;
   }
 
